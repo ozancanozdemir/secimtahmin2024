@@ -5,4 +5,5 @@ R Shiny kullanılarak geliştirilen bu oyunda 2024 yerel seçimlerinde illere g�
 Uygulamanın kaynak kodları bu repoda yer alan app.R dosyasında yer almaktadır.
 
 
-![image](https://github.com/ozancanozdemir/secimtahmin2024/assets/33122288/29e073c2-1928-4134-82f4-e55a55f84dd6)
+
+<img width="1462" alt="Screenshot 2024-03-22 at 22 09 04" src="https://github.com/ozancanozdemir/secimtahmin2024/assets/33122288/15616fd5-acf0-4565-9560-e6baaf10fe03">
