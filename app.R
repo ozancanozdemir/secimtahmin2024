@@ -3,8 +3,8 @@ library(ggplot2)
 library(sf)
 library(dplyr)
 
-# Örnek olarak, 'veriniz' yerine gerçek sf veri setinizi yükleyin
-veriniz <- st_read("https://geodata.ucdavis.edu/gadm/gadm4.1/json/gadm41_TUR_1.json")
+
+df<- st_read("https://geodata.ucdavis.edu/gadm/gadm4.1/json/gadm41_TUR_1.json")
 
 
 ui <- fluidPage(
@@ -49,7 +49,7 @@ server <- function(input, output) {
   output$harita <- renderPlot({
     mevcut_secimler <- secilenler()
     
-    harita_data <- veriniz %>%
+    harita_data <- df%>%
       mutate(renk = ifelse(NAME_1 %in% mevcut_secimler$il, mevcut_secimler$color[match(NAME_1, mevcut_secimler$il)], "grey")) 
     
     ggplot(data = harita_data) +
